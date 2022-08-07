@@ -1,6 +1,8 @@
 import axios from 'axios';
 import jwtDecode from 'jwt-decode';
 
+export const BASE_URL = process.env.NEXT_PUBLIC_BASE_URL;
+
 export const createOrGetUser = async (response: any, addUser: any) => {
     // Google login JWT decoded
     const decoded: { name: string, picture: string, sub: string } = jwtDecode(response.credential);
@@ -18,5 +20,5 @@ export const createOrGetUser = async (response: any, addUser: any) => {
     addUser(user)
 
     // Make a POST request to NextJS API route containing the user details
-    await axios.post(`http://localhost:3000/api/auth`, user);
+    await axios.post(`${BASE_URL}/api/auth`, user);
 };
