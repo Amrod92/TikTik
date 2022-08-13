@@ -43,7 +43,7 @@ export const footerList1 = [
   "Store",
   "Contact",
   "Carrers",
-  "ByteDance",
+  "Patruni&Sutta",
   "Creator Directory",
 ];
 export const footerList2 = [
