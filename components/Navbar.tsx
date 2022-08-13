@@ -35,6 +35,7 @@ const Navbar = () => {
             alt="TikTik"
             layout="responsive"
           />
+          <p className="text-gray-400 text-xs">Powered by Manlio</p>
         </div>
       </Link>
 
